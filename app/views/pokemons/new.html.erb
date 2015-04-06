@@ -1,3 +1,4 @@
-<%= simple_form_for @trainer.pokemon do |f| %>
+<%= simple_form_for @pokemon do |f| %>
   <%= f.input :name, label: 'New Pokemon Name'%>
+  <%= f.submit 'Create Pokemon' %>
 <% end %>

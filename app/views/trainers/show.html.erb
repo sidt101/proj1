@@ -3,7 +3,7 @@
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 
 <% if @trainer == current_trainer %>
- <%= button_to "Create A New Pokemon", pokemon_new_path, :class => "button medium", :method => :get %> </p>
+ <%= button_to "Create A New Pokemon", new_pokemon_path, :class => "button medium", :method => :get %> </p>
 <% end %> 
 
 <%@trainer.pokemon.each do |pokemon|%>
